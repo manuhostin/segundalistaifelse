@@ -1,0 +1,17 @@
+<script>
+  
+    const antes = parseFloat(prompt('Insira sua nota antes de receber ajuda'));
+    const depois = parseFloat(prompt('Insira sua nota depois de receber ajuda'));
+
+
+let acrescimo
+if (depois > antes){
+    const diferença = depois - antes;
+    acrescimo = diferença / 4;
+}
+else {
+    acrescimo =  0;
+}
+  alert(`O acrescimo do big brother é de ${acrescimo}`);
+
+</script>

@@ -1,0 +1,19 @@
+<script>
+    
+    const idade = Number(prompt('Insira a idade do seu cao'));
+    const porte = prompt(`Insira o porte do seu cao sendo P pequeno, M medio e G grande`).trim().toUpperCase();
+
+    let final = 0;
+
+    if (porte == "P") {
+        final = idade * 5;
+    }
+    else if (porte == "M") {
+        final = idade * 6;
+    }
+    else if (porte == "G"){
+        final = idade * 7;
+    }
+
+    alert (`A idade humana do seu cao e ${final}`);
+</script>

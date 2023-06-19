@@ -1,0 +1,21 @@
+<script>
+const peso=Number(prompt("insira o seu peso"));
+const altura=Number(prompt("insira a sua altura"));    
+const imc= peso/altura **2
+if (imc <= 18.5){
+    alert ('subpeso');
+}
+
+else if (imc <= 25){
+    alert ('normal');
+}
+else if (imc <= 30){
+    alert ('sobrepeso');
+}
+
+else{
+    alert ('obesidade');
+}
+
+document.write (`${imc}`);
+</script>

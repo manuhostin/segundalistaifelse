@@ -1,0 +1,13 @@
+<script>
+var n1 = parseFloat(prompt("Insira o primeiro numero:"));
+var n2 = parseFloat(prompt("Insira o segundo numero:"));
+var n3 = parseFloat(prompt("Insira o terceiro numero:"));
+
+var numeros = [n1, n2, n3];
+numeros.sort(function(a, b) {
+  return b - a;
+});
+
+alert("Numeros em ordem decrescente: " + numeros.join(", "));
+
+</script>

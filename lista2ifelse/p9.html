@@ -1,0 +1,48 @@
+<script>
+
+  const n1 = parseFloat(prompt(`Informe um número`));
+  const n2 = parseFloat(prompt(`Informe outro número`));
+  const operação = prompt(`Informe que operação deseja realizar; informe usando "+", "-", "*", "/"`);
+
+
+  let resultado = 0;
+
+  if (operação == "+"){
+      resultado = n1 + n2; 
+  }
+  else if (operação == "-"){
+      resultado = n1 - n2;
+  }
+  else if (operação == "*"){
+      resultado = n1 * n2;
+  }
+  else if (operação == "/"){
+      resultado = n1 / n2;
+  }
+  
+  let parImpar = "";
+  if (resultado % 2 == 0){
+      parImpar = "par";
+  }
+  else{
+      parImpar = "impar";
+  }
+  
+  let posNeg = "";
+  if (resultado <= 0 ){
+      posNeg = "negativo";
+  }
+  else{
+      posNeg = "positivo";
+  }
+
+  let intDec = ""
+  if (Number.isInteger (resultado)){
+      intDec = "inteiro";
+  }
+  else {
+      intDec = "decimal";
+  }
+  alert (`Resultado da operação foi: ${resultado}. Ele é um número ${parImpar}, ${posNeg} e ${intDec}`);
+
+</script>

@@ -1,0 +1,33 @@
+<script>
+  
+const hemisferio = prompt("Em qual hemisfério você está (norte/sul)?");
+const mes_atual = prompt("Qual é o mês atual?");
+
+let estacao;
+
+if (hemisferio.toLowerCase() === "norte") {
+  if (["dezembro", "janeiro", "fevereiro"].includes(mes_atual.toLowerCase())) {
+    estacao = "inverno";
+  } else if (["março", "abril", "maio"].includes(mes_atual.toLowerCase())) {
+    estacao = "primavera";
+  } else if (["junho", "julho", "agosto"].includes(mes_atual.toLowerCase())) {
+    estacao = "verão";
+  } else {
+    estacao = "outono";
+  }
+} else if (hemisferio.toLowerCase() === "sul") {
+  if (["dezembro", "janeiro", "fevereiro"].includes(mes_atual.toLowerCase())) {
+    estacao = "verão";
+  } else if (["março", "abril", "maio"].includes(mes_atual.toLowerCase())) {
+    estacao = "outono";
+  } else if (["junho", "julho", "agosto"].includes(mes_atual.toLowerCase())) {
+    estacao = "inverno";
+  } else {
+    estacao = "primavera";
+  }
+}
+
+// Exibe a estação do ano correspondente
+alert("A estação do ano atual é: " + estacao);
+
+</script>

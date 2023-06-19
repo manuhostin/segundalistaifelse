@@ -1,0 +1,22 @@
+<script>
+
+    const valor1 = Number(prompt('Insira um lado do triangulo'));
+    const valor2 = Number(prompt('Insira outro lado do triangulo'));
+    const valor3 = Number(prompt('Insira outro lado do triangulo'));
+
+if (valor1 > (valor2 + valor3)) {
+    alert ('Nao e um triangulo');
+}
+else if (valor1 == valor2 && valor2 == valor3) {
+    alert ('E um triangulo equilitero');
+}
+else if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3){
+    alert ('E um triangulo isosceles');
+}
+else {
+    alert ('E um triangulo escaleno');
+}
+
+    //Saída
+</script>
+   

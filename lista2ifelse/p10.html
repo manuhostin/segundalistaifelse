@@ -1,0 +1,40 @@
+<script>
+function Pergunta(pergunta) {
+  let resposta = prompt(pergunta).toLowerCase();
+  if (resposta === 'sim' || resposta === 's') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let respostasPositivas = 0;
+
+if (Pergunta("Telefonou para a vítima?")) {
+  respostasPositivas++;
+}
+if (Pergunta("Esteve no local do crime?")) {
+  respostasPositivas++;
+}
+if (Pergunta("Mora perto da vítima?")) {
+  respostasPositivas++;
+}
+if (Pergunta("Devia para a vítima?")) {
+  respostasPositivas++;
+}
+if (Pergunta("Já trabalhou com a vítima?")) {
+  respostasPositivas++;
+}
+
+if (respostasPositivas === 5) {
+  alert("Classificação: Assassino");
+} else if (respostasPositivas === 4 || respostasPositivas === 3) {
+  alert("Classificação: Cúmplice");
+} else if (respostasPositivas === 2) {
+  alert("Classificação: Suspeita");
+} else {
+  alert("Classificação: Inocente");
+}
+
+
+</script>
