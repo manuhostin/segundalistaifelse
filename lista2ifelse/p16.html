@@ -1,13 +1,13 @@
 <script>
-var ano = prompt("Insira um ano:");
+const ano = prompt("Insira um ano:");
 
-function anobissexto(ano) {
-  return (ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0;
+if ((ano % 100 != 0 && ano % 4 == 0) || (ano % 400 == 0)) {
+    alert (`o ano é um ano bissexto!`);
 }
-
-if (anobissexto(ano)) {
-  alert(ano + " e um ano bissexto");
-} else {
-  alert(ano + " nao e um ano bissexto");
+  else if (ano %4 != 0) {
+    alert (`nao e um ano bissexto`);
+}
+  else {
+    alert (`valor invalido`);
 }
 </script>
